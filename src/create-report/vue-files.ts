@@ -77,7 +77,7 @@ function* getMatches(
  */
 function extractMethodMatches(file: SimpleFile): I18NItemWithBounding[] {
   const methodRegExp =
-    /(?:[$\s.:"'`+\(\[\{]t[scm]?)\(\s*?(["'`])((?:[^\\]|\\.)*?)\1/g;
+    /(?:[$\s.:"'`+\(\[\{]t[kscm]?)\(\s*?(["'`])((?:[^\\]|\\.)*?)\1/g;
   return [...getMatches(file, methodRegExp, 2)];
 }
 
