@@ -128,7 +128,7 @@ function* getMatches(file, regExp, captureGroup = 1) {
  * @returns a list of translation keys found in `file`.
  */
 function extractMethodMatches(file) {
-  const methodRegExp = /(?:[$\s.:"'`+\(\[\{]t[scm]?)\(\s*?(["'`])((?:[^\\]|\\.)*?)\1/g;
+  const methodRegExp = /(?:[$\s.:"'`+\(\[\{]t[kscm]?)\(\s*?(["'`])((?:[^\\]|\\.)*?)\1/g;
   return [...getMatches(file, methodRegExp, 2)];
 }
 function extractComponentMatches(file) {
