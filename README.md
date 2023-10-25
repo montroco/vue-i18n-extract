@@ -236,6 +236,15 @@ $tc('key.static', 0) $tc("key.static", 1) $tc(`key.static`, 2)
 
 // Without dollar sign
 tc('key.static', 0) tc("key.static", 1) tc(`key.static`, 2)
+
+// MONTRO CUSTOM - Single or double quote, and template literals
+$ts('key.static') $t("key.static") $t(`key.static`)
+
+// MONTRO CUSTOM - Without dollar sign
+ts('key.static') t("key.static") t(`key.static`)
+
+// MONTRO CUSTOM - To just return the key path
+tk('key.static') t("key.static") t(`key.static`)
 ```
 
 - i18n component:
